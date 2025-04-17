@@ -1,115 +1,4 @@
-# Nanocore Staffing Website
-
-This is the official website for Nanocore Staffing, a specialized staffing company for the semiconductor industry.
-
-## Getting Started
-
-Follow these steps to run the website locally on your machine:
-
-### Prerequisites
-
-Make sure you have the following installed on your system:
-
-- [Node.js](https://nodejs.org/) (v18 or later)
-- [npm](https://www.npmjs.com/) (v8 or later) or [yarn](https://yarnpkg.com/) (v1.22 or later)
-- [Git](https://git-scm.com/) (optional, for cloning the repository)
-
-### Installation Steps
-
-1. **Clone the repository** (if you have Git installed)
-
-   \`\`\`bash
-   git clone https://github.com/your-username/nanocore-website.git
-   cd nanocore-website
-   \`\`\`
-
-   Alternatively, you can download and extract the ZIP file of the project.
-
-2. **Install dependencies**
-
-   Using npm:
-   \`\`\`bash
-   npm install
-   \`\`\`
-
-   Or using yarn:
-   \`\`\`bash
-   yarn install
-   \`\`\`
-
-3. **Run the development server**
-
-   Using npm:
-   \`\`\`bash
-   npm run dev
-   \`\`\`
-
-   Or using yarn:
-   \`\`\`bash
-   yarn dev
-   \`\`\`
-
-4. **Open your browser**
-
-   Navigate to [http://localhost:3000](http://localhost:3000) to see the website running locally.
-
-### Building for Production
-
-To create a production build:
-
-\`\`\`bash
-npm run build
-# or
-yarn build
-\`\`\`
-
-To start the production server:
-
-\`\`\`bash
-npm run start
-# or
-yarn start
-\`\`\`
-
-## Project Structure
-
-- `app/` - Next.js app router pages and layouts
-- `components/` - Reusable React components
-- `public/` - Static assets like images and fonts
-- `styles/` - Global CSS and styling utilities
-
-## Technologies Used
-
-- [Next.js](https://nextjs.org/) - React framework
-- [React](https://reactjs.org/) - JavaScript library for building user interfaces
-- [TypeScript](https://www.typescriptlang.org/) - Typed JavaScript
-- [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Three.js](https://threejs.org/) - 3D graphics library
-- [Framer Motion](https://www.framer.com/motion/) - Animation library
-
-## Customization
-
-- To modify the color scheme, edit the `tailwind.config.ts` file
-- To update content, modify the components in the `components/` directory
-- To add new pages, create new files in the `app/` directory
-
-## Deployment
-
-This website can be deployed to any hosting platform that supports Next.js applications, such as:
-
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
-- [AWS Amplify](https://aws.amazon.com/amplify/)
-
-## Support
-
-For any questions or issues, please contact the development team.
-\`\`\`
-
-Let's also update the CSS to add the new animation classes:
-
-```typescriptreact file="app/globals.css"
-[v0-no-op-code-block-prefix]@tailwind base;
+@tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -241,10 +130,29 @@ Let's also update the CSS to add the new animation classes:
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0) translateX(0); }
-    25% { transform: translateY(-15px) translateX(5px); }
-    50% { transform: translateY(0) translateX(10px); }
-    75% { transform: translateY(15px) translateX(5px); }
+    0%,
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+    25% {
+      transform: translateY(-15px) translateX(5px);
+    }
+    50% {
+      transform: translateY(0) translateX(10px);
+    }
+    75% {
+      transform: translateY(15px) translateX(5px);
+    }
+  }
+
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 0.7;
+    }
+    50% {
+      opacity: 1;
+    }
   }
 
   .hover-rotate:hover {
@@ -260,5 +168,9 @@ Let's also update the CSS to add the new animation classes:
 
   .animate-float {
     animation: float 15s ease-in-out infinite;
+  }
+
+  .animate-pulse-soft {
+    animation: pulse-soft 2s ease-in-out infinite;
   }
 }
