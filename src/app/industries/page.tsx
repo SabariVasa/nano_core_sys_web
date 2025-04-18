@@ -113,7 +113,7 @@ export default function IndustriesPage() {
               </ul>
             </div>
 
-            <div className="bg-gray-50 p-8 rounded-lg card-hover">
+            {/* <div className="bg-gray-50 p-8 rounded-lg card-hover">
               <div className="mb-6">
                 <AnimatedIcon>
                   <Factory className="h-8 w-8 text-white" />
@@ -137,7 +137,7 @@ export default function IndustriesPage() {
                   <span>Fabrication Technicians</span>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             <div className="bg-gray-50 p-8 rounded-lg card-hover">
               <div className="mb-6">

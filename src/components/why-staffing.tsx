@@ -1,26 +1,36 @@
-import { Zap, ShieldCheck, TrendingUp, Cpu } from "lucide-react"
+import { Zap, ShieldCheck, TrendingUp, Cpu, Users, Repeat, Clock, Wallet, GraduationCap } from "lucide-react"
 
 export function WhyStaffing() {
   const benefits = [
     {
-      icon: <Zap className="h-10 w-10 text-nanocoreBlue" />,
-      title: "On-Demand Talent",
-      description: "Get project-ready professionals exactly when you need them.",
+      icon: <Users className="h-10 w-10 text-nanocoreBlue" />,
+      title: "Access to Specialized Semiconductor Talent",
+      description: "We bring you highly skilled professionals with domain expertise, ready to contribute from day one—no ramp-up time required.",
+    },
+    {
+      icon: <Repeat className="h-10 w-10 text-nanocoreBlue" />,
+      title: "Flexibility with Stability",
+      description: "Scale your workforce up or down based on project needs while we handle payroll, compliance, and HR, offering agility without the hassle.",
+    },
+    {
+      icon: <Clock className="h-10 w-10 text-nanocoreBlue" />,
+      title: "Faster Hiring, Faster Delivery",
+      description: "Avoid long recruitment cycles. Our ready-to-deploy talent ensures your projects stay on schedule and meet critical deadlines.",
     },
     {
       icon: <ShieldCheck className="h-10 w-10 text-nanocoreBlue" />,
-      title: "Risk-Free Hiring",
-      description: "We handle payroll, compliance, and HR—reducing your operational load.",
+      title: "Reduced Operational Risk",
+      description: "With professionals on our payroll, you minimize legal, financial, and administrative risks while staying fully focused on core business goals.",
     },
     {
-      icon: <TrendingUp className="h-10 w-10 text-nanocoreBlue" />,
-      title: "Quick Scalability",
-      description: "Ramp up or down without the long-term liabilities of full-time hiring.",
+      icon: <Wallet className="h-10 w-10 text-nanocoreBlue" />,
+      title: "Cost-Effective Talent Management",
+      description: "Optimize costs by reducing long-term employment overheads while still gaining access to top-tier industry talent.",
     },
     {
-      icon: <Cpu className="h-10 w-10 text-nanocoreBlue" />,
-      title: "Industry Expertise",
-      description: "Our exclusive focus on semiconductors means we understand your world—and your needs.",
+      icon: <GraduationCap className="h-10 w-10 text-nanocoreBlue" />,
+      title: "Skilling and Assessment Support",
+      description: "Beyond staffing, we assess and upskill candidates to align with evolving project demands—ensuring a future-ready workforce.",
     },
   ]
 
@@ -28,9 +38,9 @@ export function WhyStaffing() {
     <section className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Staffing is the Smart Solution</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Why Staffing is the Smart Solution</h2>
           <p className="text-lg max-w-3xl mx-auto text-gray-600">
-            Outsourcing your workforce through Nanocore ensures:
+          Sure! Here's a concise version with six impactful points for your website section on "Why Staffing is the Smart Solution"—tailored for Nanocore Systems and your semiconductor focus:
           </p>
         </div>
 

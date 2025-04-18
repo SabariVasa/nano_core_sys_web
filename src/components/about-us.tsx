@@ -13,7 +13,7 @@ export function AboutUs() {
   }
 
   return (
-    <section id="about" className="section-padding bg-white">
+    <section id="about" className="section-padding pt-[!0.5em] bg-white">
       <div className="container mx-auto">
         <motion.div
           className="text-center mb-16"
@@ -30,13 +30,14 @@ export function AboutUs() {
             },
           }}
         >
-          <motion.h2 className="text-3xl md:text-4xl font-bold mb-4" variants={fadeIn}>
+          <motion.h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue" variants={fadeIn}>
             Who We Are
           </motion.h2>
           <motion.p className="text-lg max-w-3xl mx-auto text-gray-600" variants={fadeIn}>
-            Nanocore Systems is a workforce solutions company focused exclusively on the semiconductor industry. We
-            hire, manage, and deploy skilled professionals who work on your projects while remaining on our
-            payroll—combining flexibility with stability.
+          At Nanocore Systems, we are a specialized workforce solutions company dedicated exclusively to the semiconductor industry. With deep domain expertise and a strong understanding of the industry's dynamic talent needs, we deliver flexible and reliable workforce solutions that empower our clients to scale, innovate, and lead in a competitive market.
+          Our core strength lies in hiring, managing, and deploying highly skilled professionals who contribute directly to your projects while being on our payroll. This unique model allows organizations to access top-tier talent with the flexibility of contract staffing and the security of long-term support, ensuring both agility and stability in your operations.
+          But we are more than just a staffing company.
+          We also offer:
           </motion.p>
         </motion.div>
 
@@ -53,9 +54,9 @@ export function AboutUs() {
                 <Clock className="h-8 w-8 text-white" />
               </AnimatedIcon>
             </div>
-            <h3 className="text-xl font-bold mb-3">Speed</h3>
+            <h3 className="text-xl font-bold mb-3">Permanent Recruitment Services</h3>
             <p className="text-gray-600 mb-4">
-              Rapid deployment of qualified professionals to meet your project timelines and requirements.
+            Helping you build strong, future-ready in-house teams.
             </p>
           </motion.div>
 
@@ -71,9 +72,9 @@ export function AboutUs() {
                 <Cpu className="h-8 w-8 text-white" />
               </AnimatedIcon>
             </div>
-            <h3 className="text-xl font-bold mb-3">Skill</h3>
+            <h3 className="text-xl font-bold mb-3">Candidate Assessment Solutions</h3>
             <p className="text-gray-600 mb-4">
-              Industry-specific expertise with professionals who understand semiconductor technology and processes.
+              Ensuring the right fit through thorough technical and behavioral evaluations.
             </p>
           </motion.div>
 
@@ -89,9 +90,9 @@ export function AboutUs() {
                 <Shield className="h-8 w-8 text-white" />
               </AnimatedIcon>
             </div>
-            <h3 className="text-xl font-bold mb-3">Scalability</h3>
+            <h3 className="text-xl font-bold mb-3">Skilling & Upskilling Programs</h3>
             <p className="text-gray-600 mb-4">
-              Flexible workforce solutions that grow or contract based on your project needs and timelines.
+            Bridging the talent gap with targeted training aligned to semiconductor industry demands.
             </p>
           </motion.div>
         </div>

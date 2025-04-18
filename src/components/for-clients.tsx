@@ -15,7 +15,7 @@ export function ForClients() {
     <section id="clients" className="bg-white py-16 md:py-24 px-4 md:px-8 lg:px-16">
       <div className="max-w-xl mx-auto">
         <div className="mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Partner With Nanocore</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Partner With Nanocore</h2>
           <p className="text-lg text-gray-600 mb-8">
             Ready to eliminate hiring delays and focus on delivery? We'll bring the right talent to your team, backed by
             structure, speed, and support.

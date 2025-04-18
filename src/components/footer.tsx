@@ -162,7 +162,7 @@ export function Footer() {
                   </a>
                 </div>
               </li>
-              <li className="flex items-start">
+              {/* <li className="flex items-start">
                 <Phone className="h-5 w-5 text-blue mr-3 mt-1" />
                 <div>
                   <p className="text-gray-300">Phone</p>
@@ -170,12 +170,12 @@ export function Footer() {
                     +91-XXXXXXXXXX
                   </a>
                 </div>
-              </li>
+              </li> */}
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-mint mr-3 mt-1" />
                 <div>
                   <p className="text-gray-300">Location</p>
-                  <p className="text-white">[City, State]</p>
+                  <p className="text-white">[Bangalore, Karnatake]</p>
                 </div>
               </li>
             </ul>

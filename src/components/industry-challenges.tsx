@@ -34,7 +34,7 @@ export function IndustryChallenges() {
     <section className="section-padding bg-gray-50">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Industry Challenges</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Industry Challenges</h2>
           <p className="text-lg max-w-3xl mx-auto text-gray-600">
             The semiconductor industry is evolving faster than ever, but not without roadblocks:
           </p>

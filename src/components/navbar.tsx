@@ -64,7 +64,7 @@ export function Navbar() {
       ref={navRef}
       initial={{ y: -100 }}
       animate={{ y: 0 }}
-      transition={{ duration: 0.5 }}
+      // transition={{ duration: 0.5 }}
       className={cn(
         "sticky top-0 z-50 w-full transition-all duration-300",
         scrolled ? "bg-white/90 dark:bg-gray-900/90 backdrop-blur-md shadow-md" : "bg-transparent border-transparent",

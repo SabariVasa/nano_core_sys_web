@@ -85,14 +85,6 @@ export default function CandidatesPage() {
                     <CheckCircle className="h-5 w-5 text-nanocoreBlue flex-shrink-0 mr-2" />
                     <span>Competitive compensation</span>
                   </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-nanocoreBlue flex-shrink-0 mr-2" />
-                    <span>Health and retirement benefits</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-nanocoreBlue flex-shrink-0 mr-2" />
-                    <span>Paid time between projects</span>
-                  </li>
                 </ul>
               </CardContent>
             </Card>
@@ -186,36 +178,6 @@ export default function CandidatesPage() {
                 </ul>
               </CardContent>
             </Card>
-
-            <Card className="card-hover border-t-4 border-t-nanocoreBlue">
-              <CardHeader>
-                <div className="mb-4">
-                  <AnimatedIcon>
-                    <Briefcase className="h-8 w-8 text-white" />
-                  </AnimatedIcon>
-                </div>
-                <CardTitle>Work-Life Balance</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base">
-                  Enjoy flexible arrangements that respect your personal time while delivering professional results.
-                </CardDescription>
-                <ul className="mt-4 space-y-2">
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-nanocoreBlue flex-shrink-0 mr-2" />
-                    <span>Flexible scheduling options</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-nanocoreBlue flex-shrink-0 mr-2" />
-                    <span>Remote work possibilities</span>
-                  </li>
-                  <li className="flex items-start">
-                    <CheckCircle className="h-5 w-5 text-nanocoreBlue flex-shrink-0 mr-2" />
-                    <span>Supportive management</span>
-                  </li>
-                </ul>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -305,84 +267,6 @@ export default function CandidatesPage() {
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
                   <span>RTOS Specialists</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3 text-nanocoreBlue">Manufacturing & Process</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Process Engineers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Yield Enhancement Engineers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Fabrication Specialists</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Equipment Engineers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Quality Control Engineers</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3 text-nanocoreBlue">PCB & Hardware</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>PCB Design Engineers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Hardware Engineers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Signal Integrity Engineers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Power Electronics Engineers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>RF Engineers</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-white p-6 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-3 text-nanocoreBlue">Emerging Technologies</h3>
-              <ul className="space-y-2">
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>AI Hardware Engineers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Quantum Computing Engineers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>Automotive Semiconductor Specialists</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>IoT Hardware Developers</span>
-                </li>
-                <li className="flex items-center">
-                  <span className="w-2 h-2 bg-nanocoreBlue rounded-full mr-2"></span>
-                  <span>5G/6G Hardware Engineers</span>
                 </li>
               </ul>
             </div>
@@ -583,7 +467,7 @@ export default function CandidatesPage() {
             <p className="text-xl text-gray-200 mb-8">
               Join our talent network today and discover exciting opportunities with leading semiconductor companies.
             </p>
-            <Button asChild size="lg" className="bg-gradient-to-r from-mint to-blue text-nanocoreBlue hover:bg-gray-100">
+            <Button asChild size="lg" className="bg-gradient-to-r from-mint to-blue text-white hover:bg-gray-100">
               <Link href="/contact">Join Our Talent Network</Link>
             </Button>
           </div>

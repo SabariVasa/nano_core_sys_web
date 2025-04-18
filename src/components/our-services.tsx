@@ -1,31 +1,40 @@
-import { Users, CreditCard, Calendar, GraduationCap } from "lucide-react"
+import { Users, CreditCard, Calendar, GraduationCap, Briefcase, UserCheck, ListChecks, BarChart3, ArrowRightCircle, SearchCheck } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/src/components/ui/card"
 import Link from "next/link"
 
 export function OurServices() {
   const services = [
     {
-      icon: <Users className="h-12 w-12 text-white" />,
-      title: "Resource Deployment",
+      icon: <Briefcase className="h-12 w-12 text-white" />,
+      title: "Contract Hiring",
       description:
-        "Professionals for every phase of semiconductor development—design, verification, testing, and more.",
+        "Deploy semiconductor experts for short-term or project-based roles. We manage payroll, compliance, and onboarding—so you get the flexibility without administrative burden.",
     },
     {
-      icon: <CreditCard className="h-12 w-12 text-white" />,
-      title: "Payroll Staffing",
-      description: "We employ the talent, manage their benefits, and ensure compliance—so you don't have to.",
-    },
-    {
-      icon: <Calendar className="h-12 w-12 text-white" />,
-      title: "Date Card Allocation System",
+      icon: <UserCheck className="h-12 w-12 text-white" />,
+      title: "Full-Time Hiring",
       description:
-        "We deploy candidates based on agreed timelines and availability, ensuring no disruption in your project flow.",
+        "We help you hire permanent employees who are technically sound and culturally aligned—ensuring long-term success in your semiconductor projects.",
     },
     {
-      icon: <GraduationCap className="h-12 w-12 text-white" />,
-      title: "Training & Skilling",
-      description: "Industry-relevant training programs to build job-ready talent in VLSI and Embedded Systems.",
-      link: "/services#training",
+      icon: <ListChecks className="h-12 w-12 text-white" />,
+      title: "Candidate Assessment",
+      description:
+        "Our robust assessment process evaluates candidates on technical, behavioral, and job-specific competencies—helping you hire smarter and faster.",
+    },
+    {
+      icon: <BarChart3 className="h-12 w-12 text-white" />,
+      title: "Skilling & Upskilling Programs",
+      description:
+        "Customized learning solutions designed to prepare new hires or reskill existing teams—keeping your workforce aligned with evolving industry demands.",
+      link: "/services#training", // Add "Know more" navigation
+      linkIcon: <ArrowRightCircle className="h-5 w-5 ml-2 text-white" />,
+    },
+    {
+      icon: <SearchCheck className="h-12 w-12 text-white" />,
+      title: "Background Verification",
+      description:
+        "We conduct thorough background checks—covering employment history, education, criminal records, and more—to ensure the authenticity and reliability of every hire.",
     },
   ]
 
@@ -39,7 +48,7 @@ export function OurServices() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <Card key={index} className="bg-white/10 backdrop-blur-sm border-none text-white card-hover">
               <CardHeader className="text-center pb-2">

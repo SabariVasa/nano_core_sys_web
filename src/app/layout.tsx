@@ -12,7 +12,8 @@ export const metadata: Metadata = {
   title: "Nanocore Systems LLP - Precision Staffing for Semiconductor Industry",
   description:
     "Nanocore Systems provides skilled semiconductor professionals on our payroll, ready to support your projects when and where you need them.",
-    generator: 'v0.dev'
+    generator: 'powered by Next.js',
+  applicationName: "Nanocore Systems",
 }
 
 export default function RootLayout({

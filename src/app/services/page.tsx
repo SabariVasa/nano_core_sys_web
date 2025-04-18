@@ -15,12 +15,16 @@ export default function ServicesPage() {
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-mint to-blue text-white py-20 md:py-28">
         <ThreeBackground type="bubbles" primaryColor="#4ade80" secondaryColor="#3b82f6" />
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">Comprehensive staffing solutions tailored for the semiconductor industry</h1>
+        <div className="container mx-auto px-4 overflow-x-auto">
+          <div className="w-max mx-auto text-center">
+            <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold whitespace-nowrap">
+              Comprehensive staffing solutions <br/>tailored for the semiconductor industry
+            </h1>
           </div>
         </div>
       </section>
+
+
 
       {/* Core Services */}
       <section className="py-16 md:py-24 bg-white">

@@ -35,7 +35,7 @@ export function ContactUs() {
     <section id="contact" className="section-padding bg-white">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Let's Build the Future Together</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Let's Build the Future Together</h2>
           <p className="text-lg max-w-3xl mx-auto text-gray-600">
             Ready to transform your semiconductor workforce strategy? Get in touch with our team.
           </p>
@@ -53,17 +53,19 @@ export function ContactUs() {
                 </div>
               </div>
               <div className="flex items-start">
-                <Phone className="h-6 w-6 text-nanocoreBlue mr-4 mt-1" />
-                <div>
-                  <h4 className="font-semibold">Phone</h4>
-                  <p className="text-gray-600">+91-XXXXXXXXXX</p>
-                </div>
-              </div>
-              <div className="flex items-start">
                 <MapPin className="h-6 w-6 text-nanocoreBlue mr-4 mt-1" />
                 <div>
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.835434509374!2d-122.41941548468132!3d37.77492977975971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064f8e5af3d%3A0x4c8b8b8b8b8b8b8b!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1697041234567!5m2!1sen!2sus"
+                    width="100%"
+                    height="200"
+                    style={{ border: 0 }}
+                    allowFullScreen={true}
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"
+                  />
                   <h4 className="font-semibold">Location</h4>
-                  <p className="text-gray-600">[City, State]</p>
+                  <p className="text-gray-600">[Bangalore, Karnataka]</p>
                 </div>
               </div>
             </div>

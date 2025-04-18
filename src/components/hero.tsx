@@ -13,7 +13,7 @@ export function Hero() {
   }, [])
 
   return (
-    <section className="relative overflow-hidden text-white min-h-[90vh] flex items-center bg-cover bg-center" style={{ backgroundImage: "url('/path/to/your-image.jpg')" }}>
+    <section className="relative overflow-hidden text-white min-h-[90vh] flex items-center bg-cover bg-center">
       {/* Animated gradient overlay */}
       <div className="absolute inset-0 to-transparent pointer-events-none"></div>
 

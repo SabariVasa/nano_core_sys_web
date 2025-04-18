@@ -2,7 +2,7 @@ import { Navbar } from "@/src/components/navbar"
 import { Footer } from "@/src/components/footer"
 import { AnimatedBackground } from "@/src/components/animated-background"
 import { AnimatedIcon } from "@/src/components/animated-icon"
-import { CheckCircle, Clock, Shield, TrendingUp, Users, Zap } from "lucide-react"
+import { Award, CheckCircle, Clock, Shield, TrendingUp, Users, Zap } from "lucide-react"
 import { Button } from "@/src/components/ui/button"
 import Link from "next/link"
 import Image from "next/image"
@@ -128,7 +128,7 @@ export default function ClientsPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-5 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm text-center card-hover relative">
               <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-nanocoreBlue text-white flex items-center justify-center text-xl font-bold">
                 1
@@ -186,6 +186,21 @@ export default function ClientsPage() {
               <h3 className="text-xl font-bold mb-3">Support</h3>
               <p className="text-gray-600">
                 We provide ongoing management and support throughout the engagement for optimal results.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-lg shadow-sm text-center card-hover relative">
+              <div className="absolute -top-4 -left-4 w-12 h-12 rounded-full bg-nanocoreBlue text-white flex items-center justify-center text-xl font-bold">
+                5
+              </div>
+              <div className="mb-6 mx-auto">
+                <AnimatedIcon>
+                  <Award className="h-8 w-8 text-white" />
+                </AnimatedIcon>
+              </div>
+              <h3 className="text-xl font-bold mb-3">Train & Develop</h3>
+              <p className="text-gray-600">
+                We help upskill your workforce through focused training programs in semiconductor tools and technologies.
               </p>
             </div>
           </div>
@@ -255,7 +270,7 @@ export default function ClientsPage() {
       </section> */}
 
       {/* Client Logos */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      {/* <section className="py-16 md:py-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Trusted By Industry Leaders</h2>
@@ -278,7 +293,7 @@ export default function ClientsPage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 gradient-bg text-white relative overflow-hidden">
@@ -290,7 +305,7 @@ export default function ClientsPage() {
               Let's discuss how Nanocore can help you access specialized talent, reduce hiring delays, and focus on
               innovation.
             </p>
-            <Button asChild size="lg" className="bg-gradient-to-r from-mint to-blue text-nanocoreBlue hover:bg-gray-100">
+            <Button asChild size="lg" className="bg-gradient-to-r from-mint to-blue text-white hover:bg-gray-100">
               <Link href="/contact">Schedule a Consultation</Link>
             </Button>
           </div>
