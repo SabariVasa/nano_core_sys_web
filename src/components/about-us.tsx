@@ -37,10 +37,10 @@ export function AboutUs() {
           At Nanocore Systems, we are a specialized workforce solutions company dedicated exclusively to the semiconductor industry. With deep domain expertise and a strong understanding of the industry's dynamic talent needs, we deliver flexible and reliable workforce solutions that empower our clients to scale, innovate, and lead in a competitive market.
           Our core strength lies in hiring, managing, and deploying highly skilled professionals who contribute directly to your projects while being on our payroll. This unique model allows organizations to access top-tier talent with the flexibility of contract staffing and the security of long-term support, ensuring both agility and stability in your operations.
           But we are more than just a staffing company.
-          We also offer:
           </motion.p>
         </motion.div>
 
+        <motion.h3 className=" text-2xl text-gradient-mint-blue"> We also offer:</motion.h3>
         <div className="grid md:grid-cols-3 gap-8 mt-12">
           <motion.div
             className="bg-gray-50 p-8 rounded-lg text-center card-hover"

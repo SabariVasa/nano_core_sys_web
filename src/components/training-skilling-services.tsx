@@ -22,24 +22,24 @@ export function TrainingSkilling() {
       icon: <Server className="h-10 w-10 text-white" />,
       title: "Embedded Systems",
       description: "Hands-on training in embedded programming, firmware development, and system integration.",
-      image: "/embedded-systems-training.jpeg",
+      image: "/embedded-systems-training.png",
       slug: "embedded-systems",
     },
     {
       icon: <Code className="h-10 w-10 text-white" />,
       title: "Physical Design",
       description: "Training in IC layout, timing analysis, and physical implementation techniques.",
-      image: "/physical-design-training.webp",
+      image: "/physical-design-training.png",
       slug: "physical-design",
     },
     {
-      icon: <BookOpen className="h-10 w-10 text-white" />,
-      title: "Custom Corporate Programs",
+      icon: <Cpu className="h-10 w-10 text-white" />,
+      title: "Design for Testability (DFT)",
       description:
-        "Tailored training solutions aligned with your organization's specific technology stack and project requirements.",
+        "This intensive program blends theory with hands-on experience to prepare engineers for real-world challenges in chip design and verification.",
       image: "/corporate-training-program.jpg",
-      slug: "corporate-programs",
-    },
+      slug: "design-for-testability-dft",
+    }
   ]
 
   const handleProgramClick = (slug: string) => {
@@ -56,11 +56,11 @@ export function TrainingSkilling() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Training & Skilling</h2>
-          <p className="text-lg max-w-3xl mx-auto text-gray-700">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Our Learning Pack</h2>
+          {/* <p className="text-lg max-w-3xl mx-auto text-gray-700">
             We offer industry-relevant training programs to build job-ready talent in VLSI and Embedded Systems. Our
             specialized courses ensure your workforce is aligned with the latest semiconductor technologies.
-          </p>
+          </p> */}
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">

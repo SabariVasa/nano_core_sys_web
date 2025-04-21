@@ -39,9 +39,9 @@ export function WhyStaffing() {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Why Staffing is the Smart Solution</h2>
-          <p className="text-lg max-w-3xl mx-auto text-gray-600">
+          {/* <p className="text-lg max-w-3xl mx-auto text-gray-600">
           Sure! Here's a concise version with six impactful points for your website section on "Why Staffing is the Smart Solution"—tailored for Nanocore Systems and your semiconductor focus:
-          </p>
+          </p> */}
         </div>
 
         <div className="grid md:grid-cols-2 gap-12">

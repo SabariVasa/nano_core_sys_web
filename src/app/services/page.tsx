@@ -2,12 +2,54 @@ import { Navbar } from "@/src/components/navbar"
 import { Footer } from "@/src/components/footer"
 import { ThreeBackground } from "@/src/components/three-background"
 import { AnimatedIcon } from "@/src/components/animated-icon"
-import { Users, CreditCard, Calendar, FileText, BarChart, Shield, Clock } from "lucide-react"
+import {
+  Briefcase,
+  UserCheck,
+  ListChecks,
+  BarChart3,
+  SearchCheck,
+  ArrowRightCircle,
+  FileText,
+  BarChart,
+} from "lucide-react";
 import { Button } from "@/src/components/ui/button"
 import Link from "next/link"
 import { TrainingSkilling } from "@/src/components/training-skilling-services"
 
 export default function ServicesPage() {
+  const services = [
+    {
+      icon: <Briefcase className="h-12 w-12 text-white" />,
+      title: "Contract Hiring",
+      description:
+        "Deploy semiconductor experts for short-term or project-based roles. We manage payroll, compliance, and onboarding—so you get the flexibility without administrative burden.",
+    },
+    {
+      icon: <UserCheck className="h-12 w-12 text-white" />,
+      title: "Full-Time Hiring",
+      description:
+        "We help you hire permanent employees who are technically sound and culturally aligned—ensuring long-term success in your semiconductor projects.",
+    },
+    {
+      icon: <ListChecks className="h-12 w-12 text-white" />,
+      title: "Candidate Assessment",
+      description:
+        "Our robust assessment process evaluates candidates on technical, behavioral, and job-specific competencies—helping you hire smarter and faster.",
+    },
+    {
+      icon: <BarChart3 className="h-12 w-12 text-white" />,
+      title: "Skilling & Upskilling Programs",
+      description:
+        "Customized learning solutions designed to prepare new hires or reskill existing teams—keeping your workforce aligned with evolving industry demands.",
+      linkIcon: <ArrowRightCircle className="h-5 w-5 ml-2 text-white" />,
+    },
+    {
+      icon: <SearchCheck className="h-12 w-12 text-white" />,
+      title: "Background Verification",
+      description:
+        "We conduct thorough background checks—covering employment history, education, criminal records, and more—to ensure the authenticity and reliability of every hire.",
+    },
+  ];
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -28,99 +70,46 @@ export default function ServicesPage() {
 
       {/* Core Services */}
       <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Core Services</h2>
-            <p className="text-lg max-w-3xl mx-auto text-gray-600">
-              The semiconductor industry is at the core of technological innovation, powering everything from consumer electronics to industrial automation and advanced computing. As the demand for high-performance chips and cutting-edge design increases, so does the need for skilled professionals who can drive innovation and deliver results.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="bg-gray-50 p-8 rounded-lg card-hover border-t-4 border-mint">
-              <div className="mb-6">
-                <AnimatedIcon>
-                  <Users className="h-8 w-8 text-white" />
-                </AnimatedIcon>
-              </div>
-              <h3 className="text-xl font-bold mb-3">Resource Deployment</h3>
-              <p className="text-gray-600 mb-4">
-                Professionals for every phase of semiconductor development—design, verification, testing, and more.
-              </p>
-              <ul className="text-gray-600 space-y-2 mb-6">
-                <li className="flex items-start">
-                  <span className="text-mint mr-2">•</span>
-                  <span>Skilled engineers ready to deploy</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-mint mr-2">•</span>
-                  <span>Project-specific expertise</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-mint mr-2">•</span>
-                  <span>Seamless team integration</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-8 rounded-lg card-hover border-t-4 border-blue">
-              <div className="mb-6">
-                <AnimatedIcon bgClassName="bg-gradient-to-r from-blue to-mint">
-                  <CreditCard className="h-8 w-8 text-white" />
-                </AnimatedIcon>
-              </div>
-              <h3 className="text-xl font-bold mb-3">Payroll Staffing</h3>
-              <p className="text-gray-600 mb-4">
-                We employ the talent, manage their benefits, and ensure compliance—so you don't have to.
-              </p>
-              <ul className="text-gray-600 space-y-2 mb-6">
-                <li className="flex items-start">
-                  <span className="text-blue mr-2">•</span>
-                  <span>Complete HR management</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue mr-2">•</span>
-                  <span>Benefits administration</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-blue mr-2">•</span>
-                  <span>Compliance and legal handling</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="bg-gray-50 p-8 rounded-lg card-hover border-t-4 border-gradient-mint-blue">
-              <div className="mb-6">
-                <AnimatedIcon>
-                  <Calendar className="h-8 w-8 text-white" />
-                </AnimatedIcon>
-              </div>
-              <h3 className="text-xl font-bold mb-3">Date Card Allocation System</h3>
-              <p className="text-gray-600 mb-4">
-                We deploy candidates based on agreed timelines and availability, ensuring no disruption in your project
-                flow.
-              </p>
-              <ul className="text-gray-600 space-y-2 mb-6">
-                <li className="flex items-start">
-                  <span className="text-gradient-mint-blue mr-2">•</span>
-                  <span>Predictable resource planning</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gradient-mint-blue mr-2">•</span>
-                  <span>Scheduled talent deployment</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="text-gradient-mint-blue mr-2">•</span>
-                  <span>Milestone-based allocation</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">
+            Core Services
+          </h2>
+          <p className="text-lg max-w-3xl mx-auto text-gray-600">
+            The semiconductor industry is at the core of technological innovation,
+            powering everything from consumer electronics to industrial automation
+            and advanced computing. As the demand for high-performance chips and
+            cutting-edge design increases, so does the need for skilled professionals
+            who can drive innovation and deliver results.
+          </p>
         </div>
-      </section>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-gray-50 p-8 rounded-lg card-hover border-t-4 border-mint"
+            >
+              <div className="mb-6">
+                <AnimatedIcon>{service.icon}</AnimatedIcon>
+              </div>
+              <h3 className="text-xl font-bold mb-3">{service.title}</h3>
+              <p className="text-gray-600">{service.description}</p>
+            </div>
+          ))}
+        </div>
+        <div className="text-center">
+          <Button asChild size="lg" className="bg-gradient-to-r from-mint to-blue mt-8 hover:opacity-90 transition-opacity">
+            <Link href="/training-details">
+              <span className="text-white">Explore All Training Programs</span>
+            </Link>
+          </Button>
+        </div>
+      </div>
+    </section>
 
       {/* Training & Skilling Section */}
-      <TrainingSkilling />
+      {/* <TrainingSkilling /> */}
 
       {/* Service Process */}
       <section className="py-16 md:py-24 bg-gray-50">
@@ -207,7 +196,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Additional Services */}
-      <section className="py-16 md:py-24 bg-gradient-to-r from-mint to-blue text-white relative overflow-hidden">
+      {/* <section className="py-16 md:py-24 bg-gradient-to-r from-mint to-blue text-white relative overflow-hidden">
         <ThreeBackground type="particles" primaryColor="#ffffff" secondaryColor="#ffffff" density={30} />
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
@@ -266,7 +255,7 @@ export default function ServicesPage() {
             </Button>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       <Footer />

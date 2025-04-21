@@ -237,7 +237,7 @@ export default function AboutPage() {
                   <Award className="h-8 w-8 text-white" />
                 </AnimatedIcon>
               </div>
-              <h3 className="text-xl font-bold mb-3">Training & Development</h3>
+              <h3 className="text-xl font-bold mb-3">Train & Develop</h3>
               <p className="text-gray-200">
                 We offer tailored training and development programs to equip your team with the latest skills in semiconductor technologies, ensuring that your workforce remains competitive and future-ready.
               </p>

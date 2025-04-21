@@ -27,7 +27,6 @@ export function OurServices() {
       title: "Skilling & Upskilling Programs",
       description:
         "Customized learning solutions designed to prepare new hires or reskill existing teams—keeping your workforce aligned with evolving industry demands.",
-      link: "/services#training", // Add "Know more" navigation
       linkIcon: <ArrowRightCircle className="h-5 w-5 ml-2 text-white" />,
     },
     {
@@ -59,11 +58,11 @@ export function OurServices() {
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-gray-200 text-base">{service.description}</CardDescription>
-                {service.link && (
+                {/* {service.link && (
                   <Link href={service.link} className="inline-block mt-4 text-mint hover:text-blue transition-colors">
                     Learn more →
                   </Link>
-                )}
+                )} */}
               </CardContent>
             </Card>
           ))}

@@ -46,7 +46,7 @@ export default function TrainingDetailsPage() {
         "Hardware-software interfacing",
         "IoT protocols and implementation",
       ],
-      image: "/embedded-systems-training.jpeg",
+      image: "/embedded-systems-training.png",
       slug: "embedded-systems",
     },
     {
@@ -59,91 +59,105 @@ export default function TrainingDetailsPage() {
         "Static timing analysis",
         "DFT and DFM techniques",
       ],
-      image: "/physical-design-training.webp",
+      image: "/physical-design-training.png",
       slug: "physical-design",
     },
     {
-      icon: <BookOpen className="h-10 w-10 text-white" />,
-      title: "Custom Corporate Programs",
+      icon: <Cpu className="h-10 w-10 text-white" />,
+      title: "Design for Testability (DFT)",
       description:
-        "Tailored training solutions aligned with your organization's specific technology stack and project requirements.",
+        "This intensive program blends theory with hands-on experience to prepare engineers for real-world challenges in chip design and verification.",
       features: [
-        "Needs assessment and curriculum design",
-        "Flexible delivery models",
-        "Project-based learning",
-        "Performance tracking and analysis",
+          "Core DFT Techniques",
+          "Hands-on with Industry Tools",
+          "Fault Modeling & Test Optimization",
+          "System-on-Chip (SoC) Integration",
       ],
       image: "/corporate-training-program.jpg",
-      slug: "corporate-programs",
-    },
-    {
-      icon: <Microchip className="h-10 w-10 text-white" />,
-      title: "RTL Design & Verification Engineers",
-      description: "Expert RTL engineers for fast, reliable ASIC and SoC design and verification.",
-      features: ["Verilog/SystemVerilog coding", "UVM-based testbenches", "Coverage closure", "Assertions & debugging"],
-      image: "/rtl-verification-training.png",
-      slug: "rtl-verification",
-    },
-    {
-      icon: <Database className="h-10 w-10 text-white" />,
-      title: "Analog & Mixed-Signal Design",
-      description: "Specialized training in analog circuit design and mixed-signal integration techniques.",
-      features: [
-        "Analog circuit fundamentals",
-        "Op-amp and amplifier design",
-        "ADC/DAC architectures",
-        "Mixed-signal verification",
-      ],
-      image: "/analog-mixed-signal-training.jpg",
-      slug: "analog-mixed-signal",
-    },
-    {
-      icon: <Smartphone className="h-10 w-10 text-white" />,
-      title: "AI Hardware Acceleration",
-      description: "Training in designing specialized hardware for AI and machine learning applications.",
-      features: [
-        "Neural network architectures",
-        "Hardware accelerator design",
-        "Quantization techniques",
-        "Power optimization",
-      ],
-      image: "/ai-hardware-training.jpg",
-      slug: "ai-hardware",
-    },
-    {
-      icon: <Network className="h-10 w-10 text-white" />,
-      title: "RF & Wireless Design",
-      description: "Comprehensive training in RF circuit design and wireless communication systems.",
-      features: ["RF circuit fundamentals", "Antenna design principles", "Wireless protocols", "Signal integrity"],
-      image: "/rf-wireless-training.jpg",
-      slug: "rf-wireless",
-    },
-    {
-      icon: <Workflow className="h-10 w-10 text-white" />,
-      title: "Semiconductor Manufacturing",
-      description: "Training in semiconductor fabrication processes and manufacturing techniques.",
-      features: [
-        "Wafer processing fundamentals",
-        "Lithography techniques",
-        "Yield optimization",
-        "Process integration",
-      ],
-      image: "/semiconductor-manufacturing-training.jpg",
-      slug: "semiconductor-manufacturing",
-    },
-    {
-      icon: <Zap className="h-10 w-10 text-white" />,
-      title: "Power Electronics Design",
-      description: "Specialized training in power management circuits and energy-efficient design.",
-      features: [
-        "Power converter topologies",
-        "Battery management systems",
-        "Thermal management",
-        "Energy harvesting techniques",
-      ],
-      image: "/power-electronics-training.jpeg",
-      slug: "power-electronics",
-    },
+      slug: "design-for-testability-dft",
+    }
+    // {
+    //   icon: <BookOpen className="h-10 w-10 text-white" />,
+    //   title: "Custom Corporate Programs",
+    //   description:
+    //     "Tailored training solutions aligned with your organization's specific technology stack and project requirements.",
+    //   features: [
+    //     "Needs assessment and curriculum design",
+    //     "Flexible delivery models",
+    //     "Project-based learning",
+    //     "Performance tracking and analysis",
+    //   ],
+    //   image: "/corporate-training-program.jpg",
+    //   slug: "corporate-programs",
+    // },
+    // {
+    //   icon: <Microchip className="h-10 w-10 text-white" />,
+    //   title: "RTL Design & Verification Engineers",
+    //   description: "Expert RTL engineers for fast, reliable ASIC and SoC design and verification.",
+    //   features: ["Verilog/SystemVerilog coding", "UVM-based testbenches", "Coverage closure", "Assertions & debugging"],
+    //   image: "/rtl-verification-training.png",
+    //   slug: "rtl-verification",
+    // },
+    // {
+    //   icon: <Database className="h-10 w-10 text-white" />,
+    //   title: "Analog & Mixed-Signal Design",
+    //   description: "Specialized training in analog circuit design and mixed-signal integration techniques.",
+    //   features: [
+    //     "Analog circuit fundamentals",
+    //     "Op-amp and amplifier design",
+    //     "ADC/DAC architectures",
+    //     "Mixed-signal verification",
+    //   ],
+    //   image: "/analog-mixed-signal-training.jpg",
+    //   slug: "analog-mixed-signal",
+    // },
+    // {
+    //   icon: <Smartphone className="h-10 w-10 text-white" />,
+    //   title: "AI Hardware Acceleration",
+    //   description: "Training in designing specialized hardware for AI and machine learning applications.",
+    //   features: [
+    //     "Neural network architectures",
+    //     "Hardware accelerator design",
+    //     "Quantization techniques",
+    //     "Power optimization",
+    //   ],
+    //   image: "/ai-hardware-training.jpg",
+    //   slug: "ai-hardware",
+    // },
+    // {
+    //   icon: <Network className="h-10 w-10 text-white" />,
+    //   title: "RF & Wireless Design",
+    //   description: "Comprehensive training in RF circuit design and wireless communication systems.",
+    //   features: ["RF circuit fundamentals", "Antenna design principles", "Wireless protocols", "Signal integrity"],
+    //   image: "/rf-wireless-training.jpg",
+    //   slug: "rf-wireless",
+    // },
+    // {
+    //   icon: <Workflow className="h-10 w-10 text-white" />,
+    //   title: "Semiconductor Manufacturing",
+    //   description: "Training in semiconductor fabrication processes and manufacturing techniques.",
+    //   features: [
+    //     "Wafer processing fundamentals",
+    //     "Lithography techniques",
+    //     "Yield optimization",
+    //     "Process integration",
+    //   ],
+    //   image: "/semiconductor-manufacturing-training.jpg",
+    //   slug: "semiconductor-manufacturing",
+    // },
+    // {
+    //   icon: <Zap className="h-10 w-10 text-white" />,
+    //   title: "Power Electronics Design",
+    //   description: "Specialized training in power management circuits and energy-efficient design.",
+    //   features: [
+    //     "Power converter topologies",
+    //     "Battery management systems",
+    //     "Thermal management",
+    //     "Energy harvesting techniques",
+    //   ],
+    //   image: "/power-electronics-training.jpeg",
+    //   slug: "power-electronics",
+    // },
   ]
 
   const keyframes =[
@@ -196,7 +210,7 @@ export default function TrainingDetailsPage() {
                 Train & Develop
             </h1>
             <p className="text-xl text-gray-100">
-                To keep your teams ahead of the curve, we offer targeted skilling and upskilling programs—customized to match your evolving tech stack and project needs.
+            We offer a practice-oriented, globally recognized training platform with personalized learning paths and expert guidance to upskill for the most trending job roles.
             </p>
           </div>
         </div>
@@ -236,10 +250,10 @@ export default function TrainingDetailsPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Training and Development</h2>
-            <p className="text-lg max-w-3xl mx-auto text-gray-600">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gradient-mint-blue">Our Learning Pack</h2>
+            {/* <p className="text-lg max-w-3xl mx-auto text-gray-600">
                 We offer a practice-oriented, globally recognized training platform with personalized learning paths and expert guidance to upskill for the most trending job roles.
-            </p>
+            </p> */}
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {trainingPrograms.map((program, index) => (
@@ -358,7 +372,7 @@ export default function TrainingDetailsPage() {
         <AnimatedBackground type="particles" primaryColor="#ffffff" secondaryColor="#ffffff" density={30} />
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gradient-mint-blue">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">
               Ready to Build Expertise in Semiconductor Technologies?
             </h2>
             <p className="text-xl text-gray-100 mb-8">
