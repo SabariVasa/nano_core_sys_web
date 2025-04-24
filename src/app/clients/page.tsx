@@ -14,7 +14,7 @@ export default function ClientsPage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden gradient-bg text-white py-20 md:py-28">
-        <AnimatedBackground />
+        {/* <AnimatedBackground /> */}
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Partner With Nanocore</h1>
@@ -297,7 +297,7 @@ export default function ClientsPage() {
 
       {/* CTA Section */}
       <section className="py-16 md:py-24 gradient-bg text-white relative overflow-hidden">
-        <AnimatedBackground density={30} color="rgba(255, 255, 255, 0.1)" />
+        {/* <AnimatedBackground density={30} color="rgba(255, 255, 255, 0.1)" /> */}
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Semiconductor Workforce?</h2>

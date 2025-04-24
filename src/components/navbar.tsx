@@ -310,9 +310,9 @@ export function Navbar() {
             <Image
               src="/nanocore-logo.png"
               alt="Nanocore Systems Logo"
-              width={180}
-              height={60}
-              className="h-12 w-auto object-contain"
+              width={250}
+              height={100}
+              className="h-12 w-auto object-contain rounded-lg"
             />
           </Link>
         </motion.div>
@@ -338,15 +338,13 @@ export function Navbar() {
                       : "text-gray-800 hover:text-primary",
                 )}
                 onClick={(e) => {
-                  // For hash links (same-page navigation), handle scrolling manually
                   if (item.href.startsWith("/#")) {
                     e.preventDefault()
-                    const targetId = item.href.substring(2) // Remove the '/#' part
+                    const targetId = item.href.substring(2)
                     const targetElement = document.getElementById(targetId)
                     if (targetElement) {
                       targetElement.scrollIntoView({ behavior: "smooth" })
                     }
-                    // Close mobile menu if open
                     if (isMenuOpen) {
                       setIsMenuOpen(false)
                     }
@@ -435,13 +433,6 @@ export function Navbar() {
                   }}
                   className="mt-6"
                 >
-                  <Button
-                    variant="outline"
-                    className="w-full mb-3 border-mint text-mint hover:bg-mint/10"
-                    onClick={toggleMenu}
-                  >
-                    Partner With Us
-                  </Button>
                   <Button className="w-full bg-gradient-to-r from-mint to-blue hover:opacity-90" onClick={toggleMenu}>
                     Join Our Talent Network
                   </Button>

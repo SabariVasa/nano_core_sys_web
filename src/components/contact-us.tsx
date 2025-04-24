@@ -49,7 +49,7 @@ export function ContactUs() {
                 <Mail className="h-6 w-6 text-nanocoreBlue mr-4 mt-1" />
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <p className="text-gray-600">Info@nanocore.com</p>
+                  <p className="text-gray-600">info@nanocoresystems.in</p>
                 </div>
               </div>
               <div className="flex items-start">

@@ -10,7 +10,7 @@ export default function ContactPage() {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden gradient-bg text-white py-20 md:py-28">
-        <AnimatedBackground />
+        {/* <AnimatedBackground /> */}
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Contact Us</h1>
