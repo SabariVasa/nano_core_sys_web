@@ -175,7 +175,7 @@ export function Footer() {
                 <MapPin className="h-5 w-5 text-mint mr-3 mt-1" />
                 <div>
                   <p className="text-gray-300">Location</p>
-                  <p className="text-white">[Bangalore, Karnatake]</p>
+                  <p className="text-white">293/154/172, 293/154/172, Marathahalli - Sarjapur Outer Ring Rd, Kadubeesanahalli, Bengaluru, Karnataka 560103</p>
                 </div>
               </li>
             </ul>
